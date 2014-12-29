@@ -38,6 +38,11 @@ class WordpressGhosts
           'administrator', // role
           'fake@email.com', // email
           'password')  // password
+        , '1' => array(
+          'fake_username2', // username
+          'administrator', // role
+          'fake@email2.com', // email
+          'password')  // password
         );
     }
 }
